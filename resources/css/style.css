@@ -137,14 +137,14 @@ footer {
   padding: 10px;
   margin: auto;
   text-align: center;
+  position: fixed;
+  bottom: 10px;
 }
 
 footer a {
   margin: 10px;
   font-size: 0.8em;
   color: var(--ligth-gray);
-  position: absolute;
-  bottom: 10px;
 }
 
 .hidden {
@@ -179,7 +179,7 @@ footer a {
     font-size: 10vw;
   }
 
-  footer a {
+  footer {
     position: relative;
   }
 }
