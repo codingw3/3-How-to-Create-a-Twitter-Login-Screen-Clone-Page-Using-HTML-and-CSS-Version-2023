@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap");
+
+:root {
+  --white: #fafafa;
+  --dark-gray: #2c2c2c;
+  --ligth-gray: #8c8c8c;
+  --blue: #1a8cd8;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  background-color: var(--white);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  color: var(--dark-gray);
+}
+
+.twitter-right {
+  display: none;
+}
+
+h1 {
+  font-size: 5em;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+.left {
+  font-size: 20vw;
+}
+
+.right {
+  transform: translate(100px, 0);
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+a {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+button {
+  border-radius: 20px;
+  padding: 10px 20px;
+  border: 1px solid var(--ligth-gray);
+  background-color: transparent;
+  transition: opacity 0.3s, background-color 0.3s;
+  font-weight: bold;
+}
+
+button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+}
+
+.my-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.social-button {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.create-button {
+  background-color: var(--blue);
+  color: var(--white);
+  border: 1px solid transparent;
+}
+
+.text-blue {
+  color: var(--blue);
+}
+
+.d-flex-column {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-muted {
+  color: var(--ligth-gray);
+  font-size: 0.8em;
+  max-width: 300px;
+}
+
+footer {
+  padding: 10px;
+  margin: auto;
+  text-align: center;
+}
+
+footer a {
+  margin: 10px;
+  font-size: 0.8em;
+  color: var(--ligth-gray);
+  position: absolute;
+  bottom: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  body {
+    padding: 20px;
+    height: 100%;
+  }
+
+  .left {
+    display: none;
+  }
+
+  .right {
+    max-width: 90%;
+    transform: translate(0, 0);
+  }
+
+  h1 {
+    font-size: 10vw;
+  }
+
+  h2 {
+    font-size: 5vw;
+  }
+
+  .twitter-right {
+    display: block;
+    font-size: 10vw;
+  }
+
+  footer a {
+    position: relative;
+  }
+}
