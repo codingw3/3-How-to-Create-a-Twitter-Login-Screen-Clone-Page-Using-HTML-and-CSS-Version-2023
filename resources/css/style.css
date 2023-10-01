@@ -2,7 +2,9 @@
 
 :root {
   --white: #fafafa;
-  --dark-gray: #2c2c2c;
+  --dark-white: #e4e4e4;
+  --dark-white-transparent: #e4e4e48c;
+  --gray: #2c2c2c;
   --ligth-gray: #8c8c8c;
   --blue: #1a8cd8;
 }
@@ -12,7 +14,6 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-  background-color: var(--white);
 }
 
 body {
@@ -21,6 +22,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background-color: var(--white);
 }
 
 .container {
@@ -28,7 +30,7 @@ body {
   justify-content: center;
   align-items: center;
   margin: auto;
-  color: var(--dark-gray);
+  color: var(--gray);
 }
 
 .twitter-right {
@@ -98,18 +100,27 @@ button:hover {
   margin-right: auto;
 }
 
-.social-button {
+.button-bg-white {
   display: flex;
   gap: 10px;
   justify-content: center;
   align-items: center;
   text-align: center;
+  background-color: var(--white);
 }
 
-.create-button {
+.button-bg-blue {
   background-color: var(--blue);
   color: var(--white);
   border: 1px solid transparent;
+}
+
+.button-bg-transparent {
+  background-color: transparent;
+}
+
+.button-bg-transparent:hover {
+  background-color: var(--dark-white);
 }
 
 .text-blue {
@@ -147,6 +158,52 @@ footer a {
   color: var(--ligth-gray);
 }
 
+/* MODAL */
+.modal {
+  background-color: var(--dark-white-transparent);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.button-close-modal {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border: none;
+}
+
+.logo-twitter-modal {
+  position: absolute;
+  top: 20px;
+}
+
+.modal-container {
+  border-radius: 20px;
+  background-color: var(--dark-white);
+  width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  position: absolute;
+}
+
+.modal-content {
+  width: 50%;
+}
+
+.modal-content input {
+  border: 1px solid var(--ligth-gray);
+  border-radius: 5px;
+  padding: 10px;
+  background-color: var(--dark-white);
+}
+
 .hidden {
   display: none;
 }
@@ -154,7 +211,6 @@ footer a {
 @media (max-width: 1000px) {
   body {
     padding: 20px;
-    height: 100%;
   }
 
   .left {
@@ -181,5 +237,13 @@ footer a {
 
   footer {
     position: relative;
+  }
+}
+
+@media (max-width: 500px) {
+  .modal-container {
+    height: 100vh;
+    width: 100vw;
+    border-radius: 0;
   }
 }

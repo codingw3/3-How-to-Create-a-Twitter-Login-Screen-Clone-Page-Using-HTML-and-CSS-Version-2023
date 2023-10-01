@@ -33,18 +33,18 @@
         <h2 class="mt-20">Inscreva-se hoje</h2>
 
         <p class="button-group">
-          <button class="mt-20 social-button">
+          <button class="mt-20 button-bg-white">
             <i class="fa-brands fa-google"></i>
             <span>Inscrever-se no Google</span>
           </button>
-          <button class="mt-10 social-button">
+          <button class="mt-10 button-bg-white">
             <i class="fa-brands fa-apple"></i>
             <span>Inscrever-se com Apple</span>
           </button>
 
           <span class="mt-10 text-center">ou</span>
 
-          <button class="mt-10 create-button">Criar conta</button>
+          <button class="mt-10 button-bg-blue">Criar conta</button>
         </p>
 
         <p class="mt-10 text-muted">
@@ -55,7 +55,9 @@
         </p>
 
         <h2 class="mt-30">Já tem uma conta?</h2>
-        <button id="login-button" class="mt-10 text-blue">Entrar</button>
+        <button class="mt-10 button-bg-transparent text-blue" class="mt-10 text-blue">
+          Entrar
+        </button>
       </div>
     </div>
 
@@ -79,5 +81,92 @@
       <a href="#">Configurações</a>
       <a href="#">&copy; 2023 X Corp.</a>
     </footer>
+
+    <!-- LOGIN -->
+    <div class="modal hidden">
+      <div class="modal-container">
+        <button class="button-close-modal">x</button>
+
+        <span class="logo-twitter-modal">
+          <i class="fa-brands fa-x-twitter"></i>
+        </span>
+
+        <div class="modal-content">
+          <h2 class="mt-20">Entrar no X</h2>
+  
+          <p class="button-group">
+            <button class="mt-20 button-bg-white">
+              <i class="fa-brands fa-google"></i>
+              <span>Fazer login com o Google</span>
+            </button>
+            <button class="mt-10 button-bg-white">
+              <i class="fa-brands fa-apple"></i>
+              <span>Entrar com Apple</span>
+            </button>
+  
+            <span class="mt-10 text-center">ou</span>
+  
+            <input
+              class="mt-10"
+              type="text"
+              placeholder="Celular, e-mail ou nome de usuário"
+            />
+            <button class="mt-10 button-bg-blue">Avançar</button>
+            <button class="mt-10 button-bg-transparent">
+              Esqueceu sua senha?
+            </button>
+          </p>
+  
+          <p class="mt-30 text-muted">
+            Não tem uma conta?
+            <a href="#" class="text-blue">Inscreva-se</a>
+          </p>
+        </div>
+        </div>
+    </div>
+
+    <!-- REGISTER -->
+    <div class="modal hidden">
+      <div class="modal-container">
+        <button class="button-close-modal">x</button>
+
+        <span class="logo-twitter-modal">
+          <i class="fa-brands fa-x-twitter"></i>
+        </span>
+
+        <div class="modal-content">
+          <h2 class="mt-20">Inscreva-se no X</h2>
+  
+          <p class="button-group">
+            <button class="mt-20 button-bg-white">
+              <i class="fa-brands fa-google"></i>
+              <span>Inscrever-se no Google</span>
+            </button>
+            <button class="mt-10 button-bg-white">
+              <i class="fa-brands fa-apple"></i>
+              <span>Inscrever-se com Apple</span>
+            </button>
+  
+            <span class="mt-10 text-center">ou</span>
+  
+            <button class="mt-10 button-bg-blue">Criar conta</button>
+
+            <p class="mt-10 text-muted">
+              Ao se inscrever você concorda com os
+              <a href="#" class="text-blue">Termos de Serviço</a> e a
+              <a href="#" class="text-blue">Política de Privacidade</a>, incluindo o
+              <a href="#" class="text-blue">Uso de Cookies</a>.
+            </p>
+          </p>
+  
+          <p class="mt-30 text-muted">
+            Já tem uma conta?
+            <a href="#" class="text-blue">Entrar</a>
+          </p>
+        </div>
+        </div>
+    </div>
+
+    <script src="resources/js/scripts.js"></script>
   </body>
 </html>
