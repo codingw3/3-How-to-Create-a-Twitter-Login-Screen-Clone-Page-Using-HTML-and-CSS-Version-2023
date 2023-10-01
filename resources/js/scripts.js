@@ -23,14 +23,12 @@ for (let button of listButtonCloseModal) {
 for (let button of listButtonLoginAccount) {
   button.addEventListener("click", function () {
     modalLogin.classList.remove("display-hidden");
-    modalLogin.classList.remove("display-hidden");
     modalRegister.classList.add("display-hidden");
   });
 }
 
 for (let button of listButtonCreateAccount) {
   button.addEventListener("click", function () {
-    modalRegister.classList.remove("display-hidden");
     modalRegister.classList.remove("display-hidden");
     modalLogin.classList.add("display-hidden");
   });
