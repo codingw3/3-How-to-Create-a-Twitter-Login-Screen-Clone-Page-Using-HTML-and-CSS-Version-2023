@@ -4,8 +4,8 @@
 
 ![Level](https://img.shields.io/badge/Level-Junior-green?style=for-the-badge)
 
-- [Video](https://youtube/@codingw3)
-- [Demo](https://codingw3.github.io/3-How-to-Create-a-Twitter-Login-Screen-Clone-Page-Using-HTML-and-CSS-Version-2023/)
+- [Video](https://youtu.be/cuaVdLGZ40o)
+- [Demo](https://codingw3.github.io/Video3-Twitter-Login-Page-Version-2023-HTML-CSS-JavaScript/)
 
 ## Technologies
 ![HTML 5](https://img.shields.io/badge/HTML%205-E34F26?style=for-the-badge&logo=html5&logoColor=white)
